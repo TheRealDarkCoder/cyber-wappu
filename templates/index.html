@@ -9,10 +9,14 @@
     <h1>Submit Text</h1>
     <form method="post">
         <label for="text">Enter Text:</label><br>
-        <input type="text" id="text" name="text"><br><br>
+        <input type="text" id="text" name="text" maxlength="16"><br><br>
+        <label for="text">Your names:</label><br>
+        <input type="text" id="text" name="name" maxlength="12"><br><br>
         <input type="submit" value="Submit">
     </form>
     <h2>Current Text:</h2>
     <p>{{ stored_text }}</p>
+    <h2>Set by</h2>
+    <p>{{ author_name }}</p>
 </body>
 </html>
